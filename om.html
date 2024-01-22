@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            height: 99.3vh;
+            width: 99.3vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            
+        }
+
+        #ok {
+            height: 8vh;
+            width: 10vw;
+            border-radius: 30%;
+            box-shadow: 20px 20px 200px black;
+            font-size: 20px;
+        }
+
+        #ok:hover {
+            transition: 1s;
+            height: 13vh;
+            width: 15vw;
+        }
+
+        .u {
+            background-color: greenyellow;
+        }
+
+        .w {
+            background-color: blue;
+        }
+
+        .j {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+    <button type="button" onclick="getMessage()">Click</button>
+    <p id="p1"></p>
+    <script>
+        function getMessage() {
+            document.getElementById("p1").innerHTML = "Hello from JS";
+        }
+    </script> -->
+    <div class="main">
+
+        <center>
+            <button type="button" onclick="colorChange('Red')" id="ok" class="j"><b>Red</b></button>
+            <button type="button" onclick="colorChange('blue')" id="ok" class="w"><b>Blue</b></button>
+            <button type="button" onclick="colorChange('green')" id="ok" class="u"><b>Green</b></button>
+        </center>
+
+    </div>
+
+
+
+
+
+    <script>
+
+        function colorChange(color) {
+
+            document.body.style.backgroundColor = color;
+        }
+
+    </script>
+</body>
+
+</html>
